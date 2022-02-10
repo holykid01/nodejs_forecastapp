@@ -26,7 +26,8 @@ const cordinates = (latitude,longitude,callback)=>{
         else{
   
           const datas = JSON.parse(body)
-          callback(undefined,'it is currently '+ datas.data[0].datetime+"and temp is "+datas.data[0].temp+".chance of rain is"+ datas.data[0].precip)
+          
+          callback(undefined,{time : datas.data[0].datetime, temp : datas.data[0].temp, prep:datas.data[0].precip})
         }
   
       })
