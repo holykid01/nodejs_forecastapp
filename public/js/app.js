@@ -34,10 +34,6 @@ weatherForm.addEventListener('submit', (e) => {
                 message_temp.textContent = "Temp:- "+ data.forecast.temp + " .C"
                 message_rain.textContent = "Precepitation:- "+data.forecast.prep+ " % Chance"
                 
-                if(message_temp > 25)
-                {
-                    document.getElementById("icon").src = "https://media1.giphy.com/media/jk9L41aToGZQA/giphy.gif?cid=ecf05e470gdcxmqsjxvhsv2i1beapi34ucr6fsyq82ur60p0&rid=giphy.gif&ct=g"
-                }
                 console.log(data.location)
                // console.log(data.forecast)
             }
